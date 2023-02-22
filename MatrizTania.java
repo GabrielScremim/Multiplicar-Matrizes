@@ -6,31 +6,28 @@ public class MatrizTania {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int l1 = 2;
-        int c1 = 3;
-        int l2 = 3;
-        int c2 = 2;
-        int[][] matrizA = new int[l1][c1];
-        int[][] matrizB = new int[l2][c2];
-        int[][] matrizC = new int[l1][c2];
+        int l1, l2, c1, c2;
+        int[][] matrizA;
+        int[][] matrizB;
+        int[][] matrizC;
 
-//        System.out.println("Linha matriz 1:");
-//        l1 = scanner.nextInt();
-//        System.out.println("Coluna 1: ");
-//        c1 = scanner.nextInt();
-//
-//        System.out.println("Linha matriz 2:");
-//        l2 = scanner.nextInt();
-//        System.out.println("Coluna 2: ");
-//        c2 = scanner.nextInt();
-//
-//        matrizA = new int[l1][c1];
-//        matrizB = new int[l2][c2];
-//        matrizC = new int[l1][c2];
+        System.out.println("Linha matriz 1:");
+        l1 = scanner.nextInt();
+        System.out.println("Coluna 1: ");
+        c1 = scanner.nextInt();
+
+        System.out.println("Linha matriz 2:");
+        l2 = scanner.nextInt();
+        System.out.println("Coluna 2: ");
+        c2 = scanner.nextInt();
+
+        matrizA = new int[l1][c1];
+        matrizB = new int[l2][c2];
+        matrizC = new int[l1][c2];
 
         for (int i = 0; i < l1; i++) {
             for (int j = 0; j < c1; j++) {
-                System.out.print(i + "," +j + " " + "MatrizA: ");
+                System.out.print(i + "," + j + " " + "MatrizA: ");
                 matrizA[i][j] = scanner.nextInt();
             }
         }
@@ -38,7 +35,7 @@ public class MatrizTania {
         System.out.println("");
         for (int i = 0; i < l2; i++) {
             for (int j = 0; j < c2; j++) {
-                System.out.print(i + "," +j + " " + "MatrizB ");
+                System.out.print(i + "," + j + " " + "MatrizB ");
                 matrizB[i][j] = scanner.nextInt();
             }
         }
